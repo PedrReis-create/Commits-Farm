@@ -70,7 +70,7 @@ The main logic is contained in `index.js`.
 
 ```bash
 git clone https://github.com/PedrReis-create/commits-farm.git
-cd commit-farm
+cd commits-farm
 ```
 
 ### 2. Install dependencies
