@@ -71,8 +71,8 @@ The main logic is contained in `index.js`.
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/PedrReis-create/commit-farm.git
-cd commit-farm
+git clone https://github.com/PedrReis-create/commits-farm.git
+cd commits-farm
 ```
 
 ### 2. Install dependencies
@@ -80,7 +80,7 @@ cd commit-farm
 Install all dependencies listed in `package.json`:
 
 ```bash
-npm install
+npm install simple-git moment random jsonfile
 ```
 
 The project uses:
