@@ -10,6 +10,8 @@
   <img src="https://img.shields.io/badge/Git-Version%20Control-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git">
 </p>
 
+README em Português → [🇧🇷 Português](README.pt-BR.md)
+
 ---
 
 ## 📌 About
