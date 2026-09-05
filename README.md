@@ -78,7 +78,7 @@ cd commits-farm
 Install all dependencies listed in `package.json`:
 
 ```bash
-npm install
+npm install simple-git moment random jsonfile
 ```
 
 The project uses:
