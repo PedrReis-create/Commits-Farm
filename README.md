@@ -69,7 +69,7 @@ The main logic is contained in `index.js`.
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/PedrReis-create/commit-farm.git
+git clone https://github.com/PedrReis-create/commits-farm.git
 cd commit-farm
 ```
 
