@@ -48,7 +48,8 @@ Ele foi desenvolvido como um exercício prático para entender como commits Git,
 O processo é:
 
 ```text
-Definir o período das datas
+Definir o período das datas 
+(Cuidado: Não coloque datas que ainda não chegaram (colocar datas futuras)).
 
         ↓
 
@@ -75,7 +76,7 @@ Enviar para o repositório remoto
 Repetir até que todos os commits sejam gerados
 ```
 
-A lógica principal está localizada no arquivo `index.js`.
+A lógica principal está localizada no arquivo `src/index.js`.
 
 - `moment` realiza os cálculos de data.
 - `random` gera valores aleatórios.
@@ -99,7 +100,7 @@ cd commit-farm
 Instale todas as dependências listadas no `package.json`:
 
 ```bash
-npm install
+npm install simple-git moment random jsonfile
 ```
 
 O projeto utiliza:
@@ -108,8 +109,6 @@ O projeto utiliza:
 - `simple-git`
 - `random`
 - `jsonfile`
-
-Você **não precisa instalá-las individualmente** se já executou `npm install`.
 
 ### 3. Configure o Git
 
@@ -138,20 +137,20 @@ git remote -v
 Abra:
 
 ```text
-index.js
+src/index.js
 ```
 
 Você pode alterar a quantidade de commits e o período das datas antes de executar o script.
 
-Consulte **[DATE-GUIDE.md](DATE-GUIDE.md)** para obter instruções detalhadas sobre como alterar as datas.
+Consulte **[DATE-GUIDE.md](docs/DATE-GUIDE.md)** para obter instruções detalhadas sobre como alterar as datas. (Cuidado: Não coloque datas que ainda não chegaram (colocar datas futuras)).
 
 ### 5. Execute o script
 
 ```bash
-node index.js
+node src/index.js
 ```
 
-O script irá gerar os commits de acordo com a configuração definida no `index.js`.
+O script irá gerar os commits de acordo com a configuração definida no `src/index.js`.
 
 ---
 
@@ -159,7 +158,7 @@ O script irá gerar os commits de acordo com a configuração definida no `index
 
 ### Quantidade de commits
 
-Na parte inferior do `index.js`:
+Na parte inferior do `src/index.js`:
 
 ```javascript
 makeCommits(300);
@@ -215,7 +214,7 @@ O formato das datas é:
 YYYY-MM-DD
 ```
 
-Para mais exemplos, consulte **[DATE-GUIDE.md](DATE-GUIDE.md)**.
+Para mais exemplos, consulte **[DATE-GUIDE.md](docs/DATE-GUIDE.md)**.
 
 ---
 
@@ -223,12 +222,12 @@ Para mais exemplos, consulte **[DATE-GUIDE.md](DATE-GUIDE.md)**.
 
 ```text
 commit-farm/
-
 │
-
+├── docs/
+│   └── DATE-GUIDE.md
+├── src/
+│   └── index.js
 ├── .gitignore
-├── DATE-GUIDE.md
-├── index.js
 ├── LICENSE
 ├── package.json
 ├── package-lock.json
@@ -241,9 +240,9 @@ commit-farm/
 
 | Arquivo | Descrição |
 |------|-------------|
-| `index.js` | Script principal que gera as datas e os commits |
+| `src/index.js` | Script principal que gera as datas e os commits |
+| `docs/DATE-GUIDE.md` | Guia detalhado para alterar os períodos das datas |
 | `data.json` | Armazena o timestamp gerado para o commit atual |
-| `DATE-GUIDE.md` | Guia detalhado para alterar os períodos das datas |
 | `package.json` | Configuração do projeto e suas dependências |
 | `package-lock.json` | Bloqueia as versões das dependências |
 | `README.md` | Documentação do projeto em inglês |
@@ -320,7 +319,7 @@ Um repositório privado impede que usuários sem acesso visualizem seus commits 
 
 Para obter instruções detalhadas sobre como alterar o período das datas:
 
-**[📅 Ler o Guia de Datas](DATE-GUIDE.md)**
+**[📅 Ler o Guia de Datas](docs/DATE-GUIDE.md)**
 
 ---
 
