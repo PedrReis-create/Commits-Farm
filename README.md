@@ -42,7 +42,8 @@ It is designed as a practical exercise for understanding how Git commits, timest
 The process is:
 
 ```text
-Define the date range
+Define the date range 
+(Caution: Do not enter dates that have not yet arrived (enter future dates)).
         ↓
 Generate a random number of days
         ↓
@@ -57,7 +58,7 @@ Push to the remote repository
 Repeat until all commits are generated
 ```
 
-The main logic is contained in `index.js`.
+The main logic is contained in `src/index.js`.
 
 - `moment` handles date calculations.
 - `random` generates random values.
@@ -90,8 +91,6 @@ The project uses:
 - `random`
 - `jsonfile`
 
-You do **not** need to install them individually if you already ran `npm install`.
-
 ### 3. Configure Git
 
 Before running the script, make sure Git is configured:
@@ -118,20 +117,21 @@ git remote -v
 Open:
 
 ```text
-index.js
+src/index.js
 ```
 
 You can change the number of commits and the date range before running the script.
 
-See **[DATE-GUIDE.md](DATE-GUIDE.md)** for detailed instructions on changing dates.
+See **[DATE-GUIDE.md](docs/DATE-GUIDE.md)** for detailed instructions on changing dates.
+(Caution: Do not enter dates that have not yet arrived (enter future dates)).
 
 ### 5. Run the script
 
 ```bash
-node index.js
+node src/index.js
 ```
 
-The script will generate commits according to the configuration in `index.js`.
+The script will generate commits according to the configuration in `src/index.js`.
 
 ---
 
@@ -139,7 +139,7 @@ The script will generate commits according to the configuration in `index.js`.
 
 ### Number of commits
 
-At the bottom of `index.js`:
+At the bottom of `src/index.js`:
 
 ```javascript
 makeCommits(300);
@@ -191,7 +191,7 @@ The date format is:
 YYYY-MM-DD
 ```
 
-For more examples, see **[DATE-GUIDE.md](DATE-GUIDE.md)**.
+For more examples, see **[DATE-GUIDE.md](docs/DATE-GUIDE.md)**.
 
 ---
 
@@ -200,13 +200,16 @@ For more examples, see **[DATE-GUIDE.md](DATE-GUIDE.md)**.
 ```text
 commit-farm/
 │
+├── docs/
+│   └── DATE-GUIDE.md
+├── src/
+│   └── index.js
 ├── .gitignore
-├── DATE-GUIDE.md
-├── index.js
 ├── LICENSE
 ├── package.json
 ├── package-lock.json
 ├── README.md
+├── README.pt-BR.md
 └── data.json
 ```
 
@@ -214,9 +217,9 @@ commit-farm/
 
 | File | Description |
 |------|-------------|
-| `index.js` | Main script that generates dates and commits |
+| `src/index.js` | Main script that generates dates and commits |
+| `docs/DATE-GUIDE.md` | Detailed guide for changing date ranges |
 | `data.json` | Stores the timestamp generated for the current commit |
-| `DATE-GUIDE.md` | Detailed guide for changing date ranges |
 | `package.json` | Project configuration and dependencies |
 | `package-lock.json` | Locks dependency versions |
 | `README.md` | Project documentation |
@@ -287,7 +290,7 @@ A private repository prevents users without access from viewing its commits and 
 
 For detailed instructions on changing the date range:
 
-**[📅 Read the Date Guide](DATE-GUIDE.md)**
+**[📅 Read the Date Guide](docs/DATE-GUIDE.md)**
 
 ---
 
