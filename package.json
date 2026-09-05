@@ -1,0 +1,17 @@
+{
+  "name": "commits-farm-repo",
+  "version": "1.0.0",
+  "description": "<p align=\"center\">   <strong>Generate Git commits with custom timestamps and experiment with GitHub contribution graphs.</strong> </p>",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jsonfile": "^6.2.1",
+    "moment": "^2.30.1"
+  }
+}
