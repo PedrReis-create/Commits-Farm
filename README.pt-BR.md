@@ -1,8 +1,8 @@
-# 🌱 Commit Farm
+# 🌱 Commit Farm, sim, commits em dias que você não fez nada.
 
 <p align="center">
 
-  <strong>Gere commits Git com timestamps personalizados e experimente com gráficos de contribuições do GitHub, sim, commits em dias que você não fez nada.</strong>
+  <strong>Gere commits Git com timestamps personalizados e experimente com gráficos de contribuições do GitHub</strong>
 
 </p>
 
