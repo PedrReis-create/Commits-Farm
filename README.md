@@ -1,4 +1,4 @@
-# 🌱 Commit Farm
+# 🌱 Commit Farm, yes, commits in days you didn't work
 
 <p align="center">
   <strong>Generate Git commits with custom timestamps and experiment with GitHub contribution graphs.</strong>
