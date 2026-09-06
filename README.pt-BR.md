@@ -2,7 +2,7 @@
 
 <p align="center">
 
-  <strong>Gere commits Git com timestamps personalizados e experimente com gráficos de contribuições do GitHub.</strong>
+  <strong>Gere commits Git com timestamps personalizados e experimente com gráficos de contribuições do GitHub, sim, commits em dias que você não fez nada.</strong>
 
 </p>
 
