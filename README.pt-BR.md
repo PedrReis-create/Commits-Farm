@@ -90,9 +90,9 @@ A lógica principal está localizada no arquivo `src/index.js`.
 ### 1. Clone o repositório
 
 ```bash
-git clone https://github.com/PedrReis-create/commit-farm.git
+git clone https://github.com/PedrReis-create/commits-farm.git
 
-cd commit-farm
+cd commits-farm
 ```
 
 ### 2. Instale as dependências
